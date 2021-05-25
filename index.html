@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DojoWeather</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="container blurred">
+        <div class="navbar">
+            <h1>DojoWeather</h1>
+            <ul>
+                <li><a onclick="alert('Loading Weather report...')" href="">Burbank</a></li>
+                <li><a onclick="alert('Loading Weather report...')" href="">Chicago</a></li>
+                <li><a onclick="alert('Loading Weather report...')" href="">Dallas</a></li>
+            </ul>
+        </div>
+        <div class="main-content">
+            <div class="options-content">
+                <h1>San Jose</h1>
+                <p>
+                    Show temperature in
+                    <select onchange="toggleTemperature(this)">
+                        <option value="C">C&#176;</option>
+                        <option value="F">F&#176;</option>
+                    </select>
+                </p>
+            </div>
+            <div class="content">
+                <h1>Today</h1> <img src="assets/some_rain.png" alt="">
+                <h2>some rain</h2><span class="hot">23.60&#176; </span><span class="cold">18.30&#176;</span>
+            </div>
+            <div class="content">
+                <h1>Tommorow</h1> <img src="assets/some_sun.png" alt="">
+                <h2>some sun</h2><span class="hot">23.60&#176; </span><span class="cold"> 18.30&#176;</span>
+            </div>
+            <div class="content">
+                <h1>Saturday</h1> <img src="assets/some_clouds.png" alt="">
+                <h2>some clouds</h2><span class="hot">27.60&#176; </span><span class="cold"> 18.30&#176;</span>
+            </div>
+            <div class="content">
+                <h1>Sunday</h1> <img src="assets/some_sun.png" alt="">
+                <h2>some sun</h2><span class="hot">22.60&#176; </span><span class="cold"> 18.30&#176;</span>
+            </div>
+
+        </div>
+    </div>
+<div class="annoying">
+        <img src="./assets/cookie.png" alt="cookie" />
+        <div>
+            <h3>Stop! Cookie Time</h3>
+            <p>
+                We use cookies (sadly not the edible ones) to personalize content and ads, to
+                provide social media features and to analyse our traffic. <a href="">Read more...</a>
+            </p>
+        </div>
+        <button onClick="unblur(this)" >I Accept</button>
+    </div> 
+</body>
+
+</html>
